@@ -7,7 +7,7 @@
 function doe {
   for f in 05 10 15 20 40 80; do
     echo $f
-    ./simulations.py --arrival_rate=$f --save_fig=fig$f.png $1 >lifo$f.txt
+    ../simulation.py --arrival_rate=$f --save_fig=fig$f.png $1 >lifo$f.txt
   done
 }
 

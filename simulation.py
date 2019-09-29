@@ -190,8 +190,8 @@ class Customer(object):
   def _done(self, timed_out):
     system_duration = clock_ts - self._entry_ts
 
-    if not timed_out:
-      Customer._system_durations.append(system_duration)
+    #if not timed_out:
+    Customer._system_durations.append(system_duration)
 
     Customer._total_system_duration += system_duration
     Customer._total_customers += 1
