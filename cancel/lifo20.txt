@@ -1,0 +1,40 @@
+System:
+  Queue type: FIFO
+  traffic density: 1.0
+  Run for: 3600
+Customers:
+  #generated: 72221 (expected: 72000.0 delta: 0.31%)
+  #finished: 70332 (97.38%)
+  #timed_out: 0 (0.00%)
+  #canceled: 1889 (2.62%)
+  mean execution time: 0.0487812808482 (expected: 0.05 delta: 2.44%)
+  mean time in queue: 1.00821568582
+  mean time in system: 1.05700508805
+  mean number in system: 21.1931348317
+Processor:
+  mean queue length: 20.2148988785
+  idle fraction: 0.0216539939847 (expected: 0.0 delta: inf%)
+  wasted processor time: 92.7343737667
+CSV:
+  1.0,FIFO,72221,70332,0,1889,0.0487812808482,1.05700508805,21.1931348317,20.2148988785,0.0216539939847,92.7343737667
+
+System:
+  Queue type: LIFO
+  traffic density: 1.0
+  Run for: 3600
+Customers:
+  #generated: 72221 (expected: 72000.0 delta: 0.31%)
+  #finished: 66134 (91.57%)
+  #timed_out: 6013 (8.33%)
+  #canceled: 74 (0.10%)
+  mean execution time: 0.050027210005 (expected: 0.05 delta: 0.05%)
+  mean time in queue: 0.141311595922
+  mean time in system: 0.353704976285
+  mean number in system: 7.09184595023
+Processor:
+  mean queue length: 6.17200985502
+  idle fraction: 0.0797540878456 (expected: 0.0 delta: inf%)
+  wasted processor time: 4.76281675156
+CSV:
+  1.0,LIFO,72221,66134,6013,74,0.050027210005,0.353704976285,7.09184595023,6.17200985502,0.0797540878456,4.76281675156
+
